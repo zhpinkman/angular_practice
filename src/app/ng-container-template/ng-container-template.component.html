@@ -1,0 +1,20 @@
+<!-- <ng-template *ngIf="true; then showBlock; else notShowBlock"> </ng-template>
+
+<ng-template #showBlock>
+  <span>{{ testVar | json }}</span>
+</ng-template>
+
+<ng-template #notShowBlock>
+  <p>
+    Show this only if "show" is not true
+  </p>
+</ng-template> -->
+
+<ng-template #testTemplate let-a="content">
+  the {{ a }}
+  <!-- <div *ngFor="let item of testVar | keyvalue"> -->
+  <!-- {{ item.key }}, {{ item.value }} -->
+  <!-- </div> -->
+</ng-template>
+
+<ng-container *ngTemplateOutlet="testTemplate; context: ctx"></ng-container>

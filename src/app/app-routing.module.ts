@@ -3,6 +3,8 @@ import { Routes, RouterModule } from "@angular/router";
 import { HeroesComponent } from "./heroes/heroes.component";
 import { RoutingComponent } from "./routing/routing.component";
 import { TestingComponent } from "./testing/testing.component";
+import { NgContainerTemplateComponent } from "./ng-container-template/ng-container-template.component";
+import { OuterContentComponent } from "./outer-content/outer-content.component";
 
 const routes: Routes = [
   {
@@ -16,6 +18,14 @@ const routes: Routes = [
   {
     path: "test",
     component: TestingComponent
+  },
+  {
+    path: "ng",
+    component: NgContainerTemplateComponent
+  },
+  {
+    path: "content",
+    component: OuterContentComponent
   }
 ];
 
